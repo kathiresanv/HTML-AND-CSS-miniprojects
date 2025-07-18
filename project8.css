@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #333;
+    color:balck
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card
+{
+    width: 24rem;
+    height: 36rem;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 10px 30px 5px rgba(248, 248, 248, 0.816);
+    border: 2px solid ;
+    
+    
+}
+.card img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.context
+{
+    position: absolute;
+    bottom: -50px;
+    left: 0px;
+    padding: 15px 35px;
+    background-color: #fff;
+    color: #333;
+}
+.context h2{
+    min-height: 50px;
+    color: #40739e;
+}
+.context p{
+    max-height: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+
+
+}
+.card:hover .context
+{
+    transition: all 0.2s linear;
+    bottom: 0px;
+}
+.card:hover  p
+{
+    max-height: 150px;
+    
+}
+a
+{
+    text-decoration: none;
+}

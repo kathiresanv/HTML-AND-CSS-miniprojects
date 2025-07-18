@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color:#222;
+}
+.imagecontainer
+{
+    
+    max-width: 1350px;
+    max-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: 0.5s;
+    border: 5px solid red;
+    border-radius: 15px;
+    overflow: visible;
+}
+img
+{
+    width: 35%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.5s;
+    
+    
+}
+.imagecontainer:hover img{
+    opacity: 0.5;
+}
+.imagecontainer img:hover 
+{
+    z-index: 99;
+    opacity: 1;
+    transform: scale(1.5);
+    overflow: visible;
+    
+}
+img:hover{
+    border-radius: 15px;
+}
